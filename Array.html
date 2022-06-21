@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="d1"></div>
+
+    <script>
+        var nums = [48, 845, 5, 8, 4, 5, 8];
+        var names = ["ram", "vaibhav", "swapinal"];
+
+        for (var i = 0; i < name.length; i++) {
+            console.log(names[i]);
+        }
+
+        names.push("amol");
+        names.unshift("dhiraj");
+        //remove the last element
+        names.pop();
+        //remove the first element
+        names.shift();
+        // splice
+        names.splice(1, 0, "balaji", "kushal");
+        // slice
+        //var list = names.slice(2);
+        var list = names.slice(1, 5);    // --> <5
+        names.sort();
+        names.reverse();
+        document.getElementById("d1").innerHTML = names;
+        document.getElementById("d2").innerHTML = list;
+
+    </script>
+</body>
+</html>
